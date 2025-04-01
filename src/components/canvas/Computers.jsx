@@ -59,9 +59,10 @@ const ComputersCanvas = () => {
       frameloop='demand'
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      //gl={{ preserveDrawingBuffer: true }}
-      gl={{ version: 1 }} // Force WebGL1
+      //camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [10, 3, 5], fov: 20 }} // Adjusted for mobile
+      gl={{ preserveDrawingBuffer: true }}
+      //gl={{ version: 1 }} // Force WebGL1
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
