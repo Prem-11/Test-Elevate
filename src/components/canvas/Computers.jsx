@@ -21,7 +21,8 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
+        // scale={isMobile ? 0.7 : 0.75}
+        scale={isMobile ? 0.5 : 0.65}
         position={isMobile ? [0, -3, -2.2] : [0, -4, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
@@ -59,7 +60,8 @@ const ComputersCanvas = () => {
       shadows
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
+      //gl={{ preserveDrawingBuffer: true }}
+      gl={{ version: 1 }} // Force WebGL1
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
