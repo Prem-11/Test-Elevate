@@ -31,8 +31,10 @@ import {
   tripguide,
   threejs,
   Peloton,
-  canva
+  canva,
 } from "../assets";
+
+import review_1_image from "../assets/review_1_image.jpg";
 
 export const navLinks = [
   {
@@ -181,11 +183,11 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "Client feedback will be shared here soon. Stay tuned!",
-    name: "Name",
-    designation: "Designation",
-    company: "Company",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Prem from Test Elevate provided us with a detailed bug report for SCDND Estates. While some findings were minor styling issues, he also uncovered real bugs that helped us improve our site’s security and overall functionality. What impressed me most was his professionalism — from clear documentation to recorded screen demos for each issue. Great work, and highly recommended!",
+    name: "Chandan Kumar",
+    designation: "Frontend Developer",
+    company: "SCDND Estates Pvt. Ltd",
+    image: review_1_image
   },
   {
     testimonial:
