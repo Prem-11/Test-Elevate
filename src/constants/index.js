@@ -187,7 +187,8 @@ const testimonials = [
     name: "Chandan Kumar",
     designation: "Frontend Developer",
     company: "SCDND Estates Pvt. Ltd",
-    image: review_1_image
+    image: review_1_image,
+    linkedin: "https://www.linkedin.com/in/01ck/"
   },
   {
     testimonial:
